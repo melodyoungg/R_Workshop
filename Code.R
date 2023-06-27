@@ -113,11 +113,12 @@ ggplot(adults, aes(x=Age, y=AVG_GRIP, fill=Gender, color = Gender)) +
 #normality 
 # if p value is > 0.5 your data is normally distributed 
 shapiro.test(my_data$AVG_GRIP)
+
 #### Exercise: run normality test on Total_AVG_GRIP
-shapiro.test(my_data$Total_AVG_GRIP)
+
 
 #### Exercise: create ranked version of Total_AVG_GRIP 
-my_data$RTotal_AVG_GRIP <- rank(my_data$Total_AVG_GRIP)
+
 
 #running t tests 
 #(IF YOUR DATA SETS ARE DIFFERENT SIZES) 
